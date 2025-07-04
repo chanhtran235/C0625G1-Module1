@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form{
+            background-color: bisque;
+            width: 300px;
+            padding: 20px;
+        }
+        #title1{
+            text-align: center;
+        }
+        .title2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="get">
+    <h2 id="title1" class="title2">Đăng ký1</h2>
+    <h2 class="title2">Đăng ký2</h2>
+    <label  for="name">Tên</label>
+    <input style="margin-left: 45px;margin-bottom: 10px" id="name" type="text" name="name" placeholder="Enter name"><br>
+
+    <span>Giới tính</span>
+    <input type="radio" id="male" value="male" name="gender">
+    <label for="male">Nam</label>
+    <input type="radio" id="female" value="female" name="gender">
+    <label for="female">Nữ</label><br>
+    <label>Ngày sinh</label>
+    <input name="birthday" type="date"><br>
+    <label>Môn học</label>
+    <input type="checkbox" name="subject" value="javascript"><label>JS</label>
+    <input type="checkbox" name="subject" value="java"><label>JAVA</label>
+    <input type="checkbox" name="subject" value="MySQL"><label>MySQL</label><br>
+    <label>Lớp học</label>
+    <select name="className">
+        <option value="">--Chọn lớp---</option>
+        <option value="c0525G1">C05</option>
+        <option value="c0625G1">C06</option>
+        <option value="c0725G1">C07</option>
+    </select><br>
+    <label>Mô tả thêm</label>
+    <textarea cols="20" rows="3" name="description"></textarea><br>
+    <button type="submit">Gửi</button>
+    <input type="reset" value="Xoá">
+</form>
+
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th rowspan="2">STT</th>
+        <th rowspan="2">Môn học</th>
+        <th colspan="2">Số giờ</th>
+    </tr>
+    <tr>
+        <th>Lý thuyết</th>
+        <th>Thực hành</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>JS</td>
+        <td>30</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>JS</td>
+        <td>30</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td colspan="2">Tổng</td>
+        <td colspan="2">200</td>
+    </tr>
+
+</table>
+</body>
+</html>
