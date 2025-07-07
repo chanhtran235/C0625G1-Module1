@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="name"  placeholder="nhập tên">
+<button onclick="send()">Gửi</button>
+<p id="display">Kết quả</p>
+<script>
+// // input bằng thẻ prompt;
+// let name =prompt("nhập tên của bạn");
+// let age = prompt("nhập tuổi của bạn");
+// let  check =confirm("Bạn có muốn xoá ?");
+// alert(check);
+
+function send(){
+    // lấy dữ liệu
+    let name = document.getElementById("name").value;
+    document.getElementById("display").innerText= "Tên của bạn vừa nhập là : "+ name;
+}
+
+// output
+// alert("Tên của bạn vừa nhập là : "+ name)
+// document.write("Tên của bạn vừa nhập là : "+ name);
+// document.write("Tuổi  của bạn vừa nhập là : "+ age);
+// console.log("Tên của bạn : "+ name)
+
+
+</script>
+<script src="myjs.js"></script>
+</body>
+</html>
