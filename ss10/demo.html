@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// tìm số lớn nhất trong một dãy số
+// nhập dãy s
+let n =+prompt("nhập vào số lượng các số");
+// nhập từ số
+let numbers = "";
+let max;
+for (let i = 1; i <=n ; i++) {
+  let number = + prompt("nhập số thứ "+ i);
+  if (i===1){
+    max = number;
+    numbers += number;
+  }else {
+    numbers += ","+number;
+  }
+  if (max<number){
+    max = number;
+  }
+}
+alert(numbers);
+alert(max);
+</script>
+</body>
+</html>

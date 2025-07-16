@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    alert(checkArray3([2,5,3,37]));
+    alert(checkArray3([2,5,6,37]));
+
+   function isPrime(number){
+       if(number<2){
+           return false;
+       }
+       for (let i = 2; i < number ; i++) {
+           if (number %i ===0){
+               return false;
+           }
+       }
+       return true;
+   }
+
+    function checkArray3(array) {
+        let countPrime = 0;
+        for (let i = 0; i <array.length ; i++) {
+            if (isPrime(array[i])){
+                countPrime ++;
+            }
+        }
+        return countPrime === array.length;
+        // if (countPrime === array.length) {
+        //     return  true;
+        // } else {
+        //     return false;
+        // }
+    }
+    // alert(checkArray2(["1",2,5,"8"]));
+    // alert(checkArray2(["1",2,5,"a"]));
+    function checkArray2(array) {
+        let countNumber = 0;
+        for (let i = 0; i <array.length ; i++) {
+            if (!isNaN(array[i])){
+                countNumber ++;
+            }
+        }
+        if (countNumber === 0) {
+            return 0;
+        } else if (countNumber === array.length) {
+            return  1;
+        } else {
+            return -1;
+        }
+    }
+
+
+
+    function checkArray(array) {
+        let countEven = 0;
+        for (let i = 0; i <array.length ; i++) {
+            if (array[i] %2 ===0){
+                countEven ++;
+            }
+        }
+        if (countEven === 0) {
+            return 0;
+        } else if (countEven === array.length) {
+            return  1;
+        } else {
+            return -1;
+        }
+    }
+
+    let arr1 = [2,4,6,8];
+    let arr2 = [2,5,6,8];
+    let arr3 = [1,5,11,17];
+
+    // alert(checkArray(arr1));
+    // alert(checkArray(arr2));
+    // alert(checkArray(arr3));
+
+</script>
+</body>
+</html>

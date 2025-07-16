@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // đánh giá học viên qua số điểm kết hợp chuyên cần
+    // let score = +prompt("nhập điểm trung bình");
+    // let chuyenCan = +prompt("nhập số buổi vắng nghỉ");
+    // if (score>=75){
+    //     alert("pass module");
+    // } else if (score >=70) {
+    //     alert("cần xem xét");
+    //     // toán tử 3 ngôi dùng thay cho if-else đơn giản
+    //     (chuyenCan ===0) ? alert("xem xét và cho pass"): alert("xem xét cho fail (di nghỉ nhiều)");
+    // }else {
+    //     alert("fail module");
+    // }
+
+    // if (score>=80) {
+    //     alert("giỏi");
+    // } else if (score >= 70) {
+    //     alert("khá")
+    // } else if (score >= 50) {
+    //     alert("trung bình");
+    // } else {
+    //     alert("yếu");
+    // }
+
+
+    let month = prompt("nhập vào một tháng trong năm");
+    switch (month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            // alert("tháng" +month + "có 31 ngày");
+            alert(`tháng ${month} có 31 ngày`);
+            break;
+        case 2:
+            alert(`tháng ${month} có 28 hoặc 29 ngày`);
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            // alert("tháng" +month + "có 31 ngày");
+            alert(`tháng ${month} có 30 ngày`);
+            break;
+        default:
+            alert(`tháng ${month} không phải là tháng trong nắm`);
+    }
+
+
+
+
+</script>
+</body>
+</html>
