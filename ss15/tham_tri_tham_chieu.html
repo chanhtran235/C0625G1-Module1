@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//    function changeValue(a){
+//        a++;
+//        alert("giá trị trong hàm: "+ a);
+//    }
+
+    // let x =10;
+    // changeValue(x);
+    // alert(" ngoài hàm "+ x);
+    //
+    // function changeArray(array){
+    //     array= [100,200];
+    //     alert("arraytrong hàm :" +array);
+    // }
+    // let arr = [1,2];
+    // changeArray(arr);
+    // alert("arr ngoài hàm : "+ arr);
+    // let a = 10;
+    // let a1 =2;
+    // a1 =100;
+    // alert(a);
+    // alert(a1);
+    //
+    // let arr = [1,2];
+    // let arr2 = [1,2];
+    // arr2[0]=100;
+    // alert(arr)
+    // alert(arr2)
+    function daoMang(arr){
+        for (let i = 0; i <arr.length/2 ; i++) {
+            // swap (hoán đổi vị trí)
+            let tam = arr[i];
+            arr[i]= arr[arr.length-1-i];
+            arr[arr.length-1-i] =tam;
+        }
+        return arr;
+    }
+    let array = [1,2];
+   let arr = array.reverse();
+   arr[0]= 100;
+    alert(array);
+    alert(arr);
+    // daoMang(array);
+    // alert(array);
+</script>
+</body>
+</html>

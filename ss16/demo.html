@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // tạo đối tượng trực tiếp
+  // let student1 = {
+  //   id: 1,
+  //   name: "chánh",
+  //   address: "Kon tum",
+  //   study : function (subject){
+  //     console.log(this.name +" đang học môn "+ subject);
+  //   }
+  // }
+  // let student2 = {
+  //   id: 2,
+  //   name: "chánh2",
+  //   address: "Kon tum",
+  //   study : function (subject){
+  //     console.log(this.name +" đang học môn "+ subject);
+  //   }
+  // }
+  //
+  // // console.log(student1.name);
+  // student1.study("toán");
+  // student2.study("văn");
+
+  // tạo class bằng funciton
+
+  let SinhVien = function (ma,ten,diaChi){
+      this.id = ma;
+      this.name = ten;
+      this.address = diaChi;
+      this.study = function (subject){
+          console.log(this.name + "đang học môn :"+subject);
+      }
+  }
+  // kịch bản chương trình
+  let sinhVien1 = new SinhVien(1,"chánh1","KT");
+  let sinhVien2 = new SinhVien(2,"chánh2","KT");
+  let sinhVien3 = new SinhVien(3,"chánh3","KT");
+   sinhVien3.study("lập trình js");
+
+   // tạo 1 class bằng từ khoá class trong ES6
+   class Student {
+       // đây là phương thước đặc biệt để khởi tạo đối tượng, được gọi bằng từ khoá new
+       constructor(id,name) {
+           this.id = id;
+           this.name = name;
+           this.school = "Codegym";
+
+       }
+       study(subject){
+           console.log(this.name + " đang học môn "+subject)
+       }
+   }
+   let student1 = new Student(1,"chánh1");
+   let student12 = new Student(2,"chánh2");
+
+</script>
+</body>
+</html>

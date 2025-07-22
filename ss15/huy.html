@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<p>Nhập số muốn kiểm tra:</p>
+<input type="number" placeholder="Nhập số muốn kiểm tra" id="number">
+<button onclick="check()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    let m =+prompt("nhập số");
+    isPrime(m);
+    isPrime(10);
+    function check(){
+        let n = document.getElementById("number").value;
+        isPrime(n);
+    }
+    function isPrime(number) {
+        // let number = +document.getElementById("numbers").value;
+        let result = document.getElementById("result");
+
+        if (number < 2) {
+            result.innerText = `${number} không phải là số nguyên tố`;
+            return;
+        }
+        let isPrime = true;
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            result.innerText = `${number} là số nguyên tố`;
+        } else {
+            result.innerText = `${number} không phải là số nguyên tố`;
+        }
+    }
+</script>
+</body>
+</html>

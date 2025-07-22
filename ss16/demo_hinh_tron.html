@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Circle{
+        constructor(radius) {
+           this.radius=radius;
+           this.color = "chưa có màu";
+        }
+        getArea(){
+            return this.radius*this.radius *Math.PI;
+        }
+        // tại sao lại dùng method này???
+        // getter
+        getRadius(){
+            return this.radius;
+        }
+        //setter
+        setRadius(radius){
+            this.radius = radius;
+        }
+
+    }
+    let hinhTron = new Circle(10);
+    alert(hinhTron.getArea());
+    alert("color : "+ hinhTron.getRadius());
+    // hinhTron.color = "vàng";
+    hinhTron.setRadius(50);
+    alert(hinhTron.getArea());
+    alert(hinhTron.color); // nên viết setter và getter cho color
+    alert(hinhTron.getRadius());
+</script>
+</body>
+</html>
